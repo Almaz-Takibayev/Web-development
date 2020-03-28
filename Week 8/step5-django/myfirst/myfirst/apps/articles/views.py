@@ -14,7 +14,7 @@ def detail(request,article_id):
 	try:
 		a= Article.objects.get( id= article_id)
 	except:
-	    raise Http404("Articles didnt find")
+	    raise Http404("Articles didn't find")
 
 	latest_comments_list=a.comment_set.order_by('-id')[:10]    
 
