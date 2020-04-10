@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8104607-b8ad-42af-bd5a-d48abd8abf58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/auth/auth-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/auth/components/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/auth/components/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/auth/components/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/auth/components/register/register.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/auth/components/register/register.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/auth/components/register/register.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/in-memory-data.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/shared/components/header/header.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/shared/components/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/shared/components/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/shared/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/shared/shared.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/app/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KolesaFront/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ProjectsFront.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/advertisement-detail/advertisement-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/advertisement-detail/advertisement-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/advertisement-detail/advertisement-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/advertisement.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/advertisement.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/advertisements/advertisements.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/advertisements/advertisements.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/advertisements/advertisements.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/header/header.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/in-memory-data.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/my-advertisements/my-advertisements.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/my-advertisements/my-advertisements.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/my-advertisements/my-advertisements.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/my-advertisements/my-advertisements.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/profile.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/profile.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/profile.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Week 7/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Week 7/.idea/Week 7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Week 7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Week 7/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Week 7/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MidTerm/Project" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MidTerm/Project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 11/HHBack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 11/HHBack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week 7/TourOfHeroes" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week 7/TourOfHeroes" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\User\Desktop\Web development\Project\Front\ProjectsFront\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aK7oCW74mkOxiRibf0twgIhW4X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\User\Desktop\Web development\Project\Front\ProjectsFront\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Web development\Project\Front\ProjectsFront\src\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (ProjectsFront)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (ProjectsFront)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8104607-b8ad-42af-bd5a-d48abd8abf58" name="Default Changelist" comment="" />
+      <created>1586472603974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586472603974</updated>
+      <workItem from="1586472605574" duration="11415000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1586496923620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586496923620" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1586496923619">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586496923619" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1586496923619">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586496923619" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1586496923620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586496923620" />
+    <state x="823" y="446" width="348" height="298" key="org.angular.cli.generate" timestamp="1586491984292">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="823" y="446" width="348" height="298" key="org.angular.cli.generate/0.0.1920.1040@0.0.1920.1040" timestamp="1586491984292" />
+  </component>
+</project>

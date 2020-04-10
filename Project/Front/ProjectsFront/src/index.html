@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ProjectsFront</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <app-root></app-root>
+  <script src="https://kit.fontawesome.com/609edefc42.js" crossorigin="anonymous"></script>
+  <script>
+    function myFunction(imgs) {
+      // Get the expanded image
+      var expandImg = document.getElementById("expandedImg");
+      // Get the image text
+      var imgText = document.getElementById("imgtext");
+      // Use the same src in the expanded image as the image being clicked on from the grid
+      expandImg.src = imgs.src;
+      // Use the value of the alt attribute of the clickable image as text inside the expanded image
+      imgText.innerHTML = imgs.alt;
+      // Show the container element (hidden with CSS)
+      expandImg.parentElement.style.display = "block";
+    }
+  </script>
+</body>
+</html>
