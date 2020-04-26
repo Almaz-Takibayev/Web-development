@@ -1,0 +1,27 @@
+<div *ngIf="advertisement">
+  <a class="list-group-item list-group-item-action" style="height: auto">
+    <div class="row">
+      <div class="column">
+        <img src="{{advertisement.imageBase}}" style="width: 90%; height: 90%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="{{advertisement.image1}}" style="width: 90%; height: 90%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="{{advertisement.image2}}" style="width: 90%; height: 90%" onclick="myFunction(this);">
+      </div>
+    </div>
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+    <h5>Brand: {{advertisement.brand.toUpperCase()}} <h6>Model: {{advertisement.model}}</h6></h5>
+    <h6>Country: {{advertisement.country}}</h6>
+    <h6>Body: {{advertisement.body}}</h6>
+    <h6>Capacity of engine: {{advertisement.engineCapacity}}</h6>
+    <h6>Price: {{advertisement.price}}</h6>
+    <p class="mb-1">Description: {{advertisement.description}}</p>
+  </a>
+  <button class="btn btn-danger" (click)="delete()">Delete</button>
+</div>

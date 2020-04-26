@@ -7,18 +7,18 @@ import {Company, LoginResponse, Vacancy} from './models';
   providedIn: 'root'
 })
 export class ProviderService {
-  BASE_URL = 'http://localhost:8000'
+  BASE_URL = 'http://localhost:8000';
   constructor(private http: HttpClient) {}
 
-  getCategoryList(): Observable<Company[]> {
+  getCompanyList(): Observable<Company[]> {
     return this.http.get<Company[]>(`${this.BASE_URL}/api/companies/`);
   }
 
-  getCategory(id): Observable<Company> {
+  getCompany(id): Observable<Company> {
     return this.http.get<Company>(`${this.BASE_URL}/api/companies/${id}/`);
   }
 
-  deleteCategory(id): Observable<any> {
+  deleteCompany(id): Observable<any> {
     return this.http.delete(`${this.BASE_URL}/api/companies/${id}/`);
   }
 
@@ -28,9 +28,11 @@ export class ProviderService {
       password
     });
   }
+
   getVacanciesByCompanies(pk: string): Observable<Vacancy[]> {
     return this.http.get<Vacancy[]>(`${this.BASE_URL}/api/companies/${pk}/vacancies`);
   }
+
   getVacancyById(pk: string): Observable<Vacancy> {
     return this.http.get<Vacancy>(`${this.BASE_URL}/api/vacancies/${pk}`);
   }

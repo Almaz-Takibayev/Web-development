@@ -1,24 +1,24 @@
-<div *ngIf="user">
-  <h2>{{user.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{user.id}}</div>
+<div *ngIf="userProfile">
+  <h2>{{userProfile.user.username | uppercase}} Details</h2>
+  <div><span>id: </span>{{userProfile.id}}</div>
   <div>
     <label>name:
-      <input [(ngModel)]="user.name" placeholder="name"/>
+      <p>{{userProfile.user.username}}</p>
     </label>
   </div>
   <div>
     <label>login:
-      <input [(ngModel)]="user.login" placeholder="login"/>
+      <p>{{userProfile.user.email}}</p>
     </label>
   </div>
   <div>
     <label>password:
-      <input [(ngModel)]="user.password" placeholder="password"/>
+      <p>{{userProfile.user.password}}</p>
     </label>
   </div>
   <div>
     <label>phone:
-      <input [(ngModel)]="user.name" placeholder="phone"/>
+      <p>{{userProfile.phoneNumber}}</p>
     </label>
   </div>
   <button (click)="save()">save</button>

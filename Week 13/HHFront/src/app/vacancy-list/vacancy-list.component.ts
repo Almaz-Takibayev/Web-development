@@ -10,7 +10,9 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class VacancyListComponent implements OnInit {
   vacancies: Vacancy[] = [];
+
   companyId: string;
+
   constructor(private providerService: ProviderService, private route: ActivatedRoute) {
     this.route.paramMap.subscribe(params => {
       this.companyId = params.get('id');

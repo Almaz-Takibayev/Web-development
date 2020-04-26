@@ -1,0 +1,24 @@
+<div class="container col-lg-8 offset-lg-2 p-5">
+  <div class="form-group">
+    <p>Brand: <input type="text" class="form-control-sm w-50" [(ngModel)]="brand"></p>
+    <p>Model: <input class="form-control-sm w-50" type="text" [(ngModel)]="model"></p>
+    <p>Country: <input type="text" class="form-control-sm w-50" [(ngModel)]="country"></p>
+    <p>Status: <input type="text" class="form-control-sm w-50" [(ngModel)]="status"></p>
+    <p>Body: <input type="text" class="form-control-sm w-50" [(ngModel)]="body"></p>
+    <p>Engine type: <input type="text" class="form-control-sm w-50" [(ngModel)]="typeOfEngine"></p>
+    <p>Transmission: <input type="text" class="form-control-sm w-50" [(ngModel)]="transmission"></p>
+    <p>SteeringWheel: <input type="text" class="form-control-sm w-50" [(ngModel)]="steeringWheel"></p>
+    <p>DriveWheel: <input type="text" class="form-control-sm w-50" [(ngModel)]="driveWheel"></p>
+    <p>Milage: <input type="number" class="form-control-sm w-50" [(ngModel)]="mileage"></p>
+    <p>EngineCapacity: <input type="number" class="form-control-sm w-50" [(ngModel)]="engineCapacity"></p>
+    <p>YearOfManufacture: <input type="number" class="form-control-sm w-50" [(ngModel)]="yearOfManufacture"></p>
+    <p>Color: <input type="text" class="form-control-sm w-50" [(ngModel)]="color"></p>
+    <p>Description: <input type="text" class="form-control-sm w-50" [(ngModel)]="description"></p>
+    <p>Price: <input type="number" class="form-control-sm w-50" [(ngModel)]="price"></p>
+    <p>Image: <input type="text" class="form-control-sm w-50" [(ngModel)]="imageBase"></p>
+    <p>Image:<input type="text" class="form-control-sm w-50" [(ngModel)]="image1"></p>
+    <p>Image: <input type="text" class="form-control-sm w-50" [(ngModel)]="image2"></p>
+    <button [routerLink]="['/my-advertisements']" (click)="addAdvertisement(brand, model, country, status, body, typeOfEngine, transmission, steeringWheel, driveWheel, mileage, engineCapacity,
+                   yearOfManufacture, color, description, price, imageBase, image1, image2)">ADD</button>
+  </div>
+</div>

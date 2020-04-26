@@ -22,6 +22,10 @@ export class CompanyService {
     return this.http.delete(`${this.BASE_URL}/api/companies/${id}/`);
   }
 
+  addCompany(name, description, city, address): Observable<any> {
+    return this.http.post(`${this.BASE_URL}/api/companies/`, {name, description, city, address});
+  }
+
   login(username, password): Observable<LoginResponse> {
     return this.http.post<LoginResponse>(`${this.BASE_URL}/api/login/`, {
       username,

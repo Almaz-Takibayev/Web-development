@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {CompanyService} from "../company.service";
-import {Company} from "../models";
+import {CompanyService} from '../company.service';
+import {Company} from '../models';
 
 @Component({
   selector: 'app-news-page',

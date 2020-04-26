@@ -1,24 +1,30 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#"><i class="fa fa-car"></i> kolesa.kz</a>
+  <a class="navbar-brand" href="#"><i class="fa fa-car ml-5"></i> kolesa.kz</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse ml-5" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['advertisements']" routerLinkActive="active">Advertisements</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['profile/11']" routerLinkActive="active">Profile</a>
+        <a class="nav-link" [routerLink]="['myprofile']" routerLinkActive="active">Profile</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['my-advertisements']" routerLinkActive="active">My Advertisements</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" [routerLink]="['my-advertisements/add']" routerLinkActive="active">Add Advertisement</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="['']" routerLinkActive="active">Back to main</a>
       </li>
-      <li class="nav-item" style="">
+      <li class="nav-item" style="margin-left: 40ex">
         <button class="btn btn-primary btn-outline-light" (click)="goBack()">Back</button>
+      </li>
+      <li class="nav-item ml-2" style="">
+        <button class="btn btn-primary btn-outline-light" (click)="logout()">Logout</button>
       </li>
     </ul>
   </div>

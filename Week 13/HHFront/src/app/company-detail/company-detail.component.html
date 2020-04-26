@@ -1,5 +1,8 @@
-<div *ngIf="company">
+<div *ngIf="company" class="container">
     <p>Id: {{ company.id }}</p>
     <p>Name: {{ company.name}}</p>
-  </div>
-  <a [routerLink]="'/company/' + company.id + '/vacancies'">Vacancies</a>
+    <p>Description: {{ company.description}}</p>
+    <p>City: {{ company.city}}</p>
+    <p>Address: {{ company.address}}</p>
+</div>
+<a [routerLink]="'/company/' + company.id + '/vacancies'">Vacancies</a>

@@ -1,0 +1,13 @@
+<div class="align-self-center">
+  <form class="w-50 col-lg-6 offset-lg-3 mt-5 p-5">
+    <div class="form-group ">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" [(ngModel)]="username" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+    </div>
+    <button type="submit" class="btn btn-primary" [routerLink]="['/advertisements']" (click)="login(username, password)">Submit</button>
+  </form>
+</div>

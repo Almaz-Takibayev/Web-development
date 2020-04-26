@@ -1,10 +1,10 @@
 <ul class="advertisements list-group border border-5 border-dark mt-2">
-  <li *ngFor="let advertisement of advertisements" style="text-align: left; margin-down: 3%">
-    <a routerLink="/advertisements/detail/{{advertisement.id}}" class="list-group-item list-group-item-action" style="height: auto">
-      <img src="{{advertisement.imageBase}}" style="width: 100%; height: 40%"><br>
-      <h5>{{advertisement.brand.toUpperCase()}} <h6>{{advertisement.model}}</h6></h5>
-      <h6>{{advertisement.price}}</h6>
-      <p class="mb-1">Description: {{advertisement.description}}</p>
-    </a>
-  </li>
+<li *ngFor="let advertisement of advertisements" style="text-align: left; margin-down: 3%">
+  <a routerLink="/advertisements/{{advertisement.id}}" class="list-group-item list-group-item-action" style="height: auto">
+    <img class="image" src="{{advertisement.imageBase}}" style=""><br>
+    <h5 class="brand">{{advertisement.brand.toUpperCase()}} <h6 class="model">{{advertisement.model}}</h6></h5>
+    <h6 class="price">{{advertisement.price}} ₸</h6>
+    <p class="description">Description: {{advertisement.description}}</p>
+  </a>
+</li>
 </ul>

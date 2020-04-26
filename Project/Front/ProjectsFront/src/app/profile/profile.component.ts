@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {AdvertisementService} from '../advertisement.service';
-import {User} from '../user';
-import {UserService} from '../user.service';
+import {MainService} from '../main.service';
 import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
+import {User, UserProfile} from '../models';
 
 @Component({
   selector: 'app-profile',
@@ -11,17 +10,16 @@ import {Location} from '@angular/common';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  user: User;
+  userProfile: UserProfile;
 
-  constructor(private route: ActivatedRoute, private userService: UserService, private location: Location) { }
+  constructor(private route: ActivatedRoute, private mainService: MainService, private location: Location) { }
 
   ngOnInit(): void {
     this.getUser();
   }
 
   getUser(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.userService.getUser(11).subscribe(user => this.user = user);
+    this.mainService.getMyProfile().subscribe(user => this.userProfile = user);
   }
 
   goBack(): void {
@@ -29,7 +27,7 @@ export class ProfileComponent implements OnInit {
   }
 
   save(): void {
-    this.userService.updateUser(this.user)
+    this.mainService.updateMyProfile(this.userProfile)
       .subscribe(() => this.goBack());
   }
 }

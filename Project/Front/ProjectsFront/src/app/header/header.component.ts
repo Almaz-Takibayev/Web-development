@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Location} from '@angular/common';
+import {AppComponent} from '../app.component';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,11 @@ export class HeaderComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  logout(): void {
+    localStorage.clear();
+    AppComponent.prototype.logged = false;
   }
 
 }

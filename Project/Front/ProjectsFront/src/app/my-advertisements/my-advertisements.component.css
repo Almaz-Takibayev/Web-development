@@ -1,0 +1,35 @@
+.brand{
+  position: absolute;
+  margin-left: 550px;
+  margin-top: -290px;
+  font-size: 30px;
+}
+
+.image{
+  margin-top: 20px;
+  width: 45%;
+  height: 45%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.description{
+  position: absolute;
+  margin-left: 550px;
+  margin-top: -200px;
+  font-size: 20px;
+}
+
+.model{
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 11px;
+  font-size: 25px;
+}
+
+.price{
+  position: absolute;
+  margin-left: 900px;
+  margin-top: -290px;
+  font-size: 30px;
+}

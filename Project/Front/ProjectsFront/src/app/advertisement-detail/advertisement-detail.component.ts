@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Advertisement} from '../advertisement';
 import {ActivatedRoute} from '@angular/router';
-import {AdvertisementService} from '../advertisement.service';
 import {Location} from '@angular/common';
+import {Advertisement} from '../models';
+import {MainService} from '../main.service';
 
 @Component({
   selector: 'app-advertisement-detail',
@@ -12,7 +12,7 @@ import {Location} from '@angular/common';
 export class AdvertisementDetailComponent implements OnInit {
   advertisement: Advertisement;
 
-  constructor(private route: ActivatedRoute, private advertisementService: AdvertisementService, private location: Location) { }
+  constructor(private route: ActivatedRoute, private mainService: MainService, private location: Location) { }
 
   ngOnInit(): void {
     this.getAdvertisement();
@@ -20,15 +20,10 @@ export class AdvertisementDetailComponent implements OnInit {
 
   getAdvertisement(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.advertisementService.getAdvertisement(id).subscribe(advertisement => this.advertisement = advertisement);
+    this.mainService.getAdvertisement(id).subscribe(advertisement => this.advertisement = advertisement);
   }
 
   goBack(): void {
     this.location.back();
-  }
-
-  save(): void {
-    this.advertisementService.updateAdvertisement(this.advertisement)
-      .subscribe(() => this.goBack());
   }
 }

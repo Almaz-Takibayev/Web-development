@@ -1,0 +1,46 @@
+.input{
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.form-control-sm{
+  margin-right: 300px;
+  background-color: azure;
+  border-color: darkgray;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #ffffff !important;
+  outline: none;
+  height: 24px;
+  width: 120px;
+  color: #333333;
+  font-size: 11px;
+  font-family: Tahoma;
+}
+.myButton {
+  margin-top: 20px;
+  box-shadow:inset 0px 34px 0px -15px #b54b3a;
+  background-color:#a73f2d;
+  border:1px solid #241d13;
+  border-radius: 3px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:7px 36px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #7a2a1d;
+}
+.myButton:hover {
+  background-color:#b34332;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+

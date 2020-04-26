@@ -2,7 +2,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from api.models import Company, Vacancy
-from api.serializers import CompanySerializer2, VacancySerializer, CompanySerializer
+from api.serializers import CompanyModelSerializer, VacancySerializer, CompanySerializer
 
 
 @api_view(['GET', 'POST'])
@@ -29,11 +29,11 @@ def company_detail(request, id):
         return Response({'error': str(e)})
 
     if request.method == 'GET':
-        serializer = CompanySerializer2(company)
+        serializer = CompanyModelSerializer(company)
         return Response(serializer.data)
 
     elif request.method == 'PUT':
-        serializer = CompanySerializer2(instance=company, data=request.data)
+        serializer = CompanyModelSerializer(instance=company, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)

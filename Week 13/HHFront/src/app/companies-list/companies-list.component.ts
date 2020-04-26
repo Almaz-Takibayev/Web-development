@@ -10,6 +10,11 @@ import {Company} from '../models';
 export class CompaniesListComponent implements OnInit {
   companies: Company[] = [];
 
+  name = ''
+  description = ''
+  city = ''
+  address = ''
+
   constructor(public companyService: CompanyService) {
   }
 
@@ -22,6 +27,14 @@ export class CompaniesListComponent implements OnInit {
       .subscribe(companies => {
         this.companies = companies;
       });
+  }
+
+  addCompany(name, description, city, address) {
+    this.companyService.addCompany(name, description, city, address)
+      .subscribe(company => {
+        this.companies.push(company);
+      });
+    return this.getCompanyList();
   }
 
   deleteCompany(id) {

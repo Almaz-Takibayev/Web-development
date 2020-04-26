@@ -1,5 +1,12 @@
 <div *ngFor="let company of companies">
     <a [routerLink]="'/company/' + company.id">{{ company.name }}</a>
     <button (click)="deleteCompany(company.id)">Delete</button>
-  </div>
-  
+</div>
+<div>
+  <input type="text" [(ngModel)]="name">
+  <input type="text" [(ngModel)]="description">
+  <input type="text" [(ngModel)]="city">
+  <input type="text" [(ngModel)]="address">
+  <button (click)="addCompany(name, description, city, address)">ADD</button>
+</div>
+

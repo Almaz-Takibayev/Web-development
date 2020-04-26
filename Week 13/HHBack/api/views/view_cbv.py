@@ -2,18 +2,18 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from api.models import Company, Vacancy
-from api.serializers import CompanySerializer, VacancySerializer,CompanySerializer2
+from api.serializers import CompanySerializer, VacancySerializer, CompanyModelSerializer
 
 
 class CompanyListAPIView(APIView):
     def get(self, request):
         companies = Company.objects.all()
-        serializer = CompanySerializer2(companies, many=True)
+        serializer = CompanyModelSerializer(companies, many=True)
 
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = CompanySerializer2(data=request.data)
+        serializer = CompanyModelSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -30,7 +30,7 @@ class CompanyDetailAPIView(APIView):
 
     def get(self, request, id):
         company = self.get_company(id)
-        serializer = CompanySerializer(company)
+        serializer = CompanyModelSerializer(company)
         return Response(serializer.data)
 
     def put(self, request, id):
@@ -72,7 +72,7 @@ class VacancyDetailAPIView(APIView):
 
     def get(self, request, id):
         vacancy = self.get_vacancy(id)
-        serializer = CompanySerializer(vacancy)
+        serializer = VacancySerializer(vacancy)
         return Response(serializer.data)
 
     def put(self, request, id):

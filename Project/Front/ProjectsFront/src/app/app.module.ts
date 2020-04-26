@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {ClassProvider, NgModule} from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AdvertisementsComponent } from './advertisements/advertisements.component';
@@ -7,12 +7,18 @@ import { AdvertisementDetailComponent } from './advertisement-detail/advertiseme
 import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
 import {RouterModule} from '@angular/router';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
-import {InMemoryDataService} from './in-memory-data.service';
 import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 import { MyAdvertisementsComponent } from './my-advertisements/my-advertisements.component';
+import { MyAdvertisementDetailComponent } from './my-advertisement-detail/my-advertisement-detail.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { HeaderbeforeloginComponent } from './headerbeforelogin/headerbeforelogin.component';
+import {AuthInterceptor} from './auth.interceptor';
+import {MainService} from './main.service';
+import { MyAdvertisementAddComponent } from './my-advertisement-add/my-advertisement-add.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,12 @@ import { MyAdvertisementsComponent } from './my-advertisements/my-advertisements
     AdvertisementDetailComponent,
     HeaderComponent,
     ProfileComponent,
-    MyAdvertisementsComponent
+    MyAdvertisementsComponent,
+    MyAdvertisementDetailComponent,
+    LoginComponent,
+    SignUpComponent,
+    HeaderbeforeloginComponent,
+    MyAdvertisementAddComponent
   ],
   imports: [
     BrowserModule,
@@ -29,16 +40,14 @@ import { MyAdvertisementsComponent } from './my-advertisements/my-advertisements
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, { dataEncapsulation: false }
-    )
   ],
-  exports: [
-    HeaderComponent,
-    AdvertisementsComponent,
-    AdvertisementDetailComponent
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
